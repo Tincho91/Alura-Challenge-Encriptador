@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="customcss.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Alura Challenge - Encriptador</title>
+  </head>
+  <body>
+
+    <section>
+
+      <header>
+        <nav class="navbar navbar-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.aluracursos.com/" target="_blank"><img src="img/aluraicon.png"
+                alt="alura icon"></a>
+          </div>
+        </nav>
+      </header>
+
+    </section>
+
+
+    <section class="vh-100 d-flex align-items-center">
+
+      <div class="container h-75 d-inline-block">
+        <div class="row d-flex align-middle gx-5 gy-5 rounded h-100">
+
+          <div class="text-input-area col-lg-8 col-m-12 d-flex flex-column rounded-start shadow-lg">
+            <textarea type="text" id="text" class="m-3 flex-grow-1 rounded" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+              <p><img src="img/exclamation.png" alt="alerta"> Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="d-flex justify-content-evenly">
+              <button type="button" id="encrypt" class="btn btn-dark flex-grow-1 m-3">Encriptar</button>
+              <button type="button" id="decrypt" class="btn btn-light flex-grow-1 m-3">Desencriptar</button>
+            </div>
+
+          </div>
+
+          <div class="text-result-area col-lg-4 col-m-12 d-flex flex-column rounded-end shadow-lg">
+            <textarea name="result" id="result-area" class="m-3 flex-grow-1 rounded"></textarea>
+            <button type="button" id="copy" class="btn btn-danger m-3">Copiar</button>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <footer>
+        <nav class="navbar fixed-bottom navbar-light">
+          <div class="container-fluid d-flex justify-content-center">
+            <p class="navbar-text">Alura Challenge 1 - Encriptador</p>
+          </div>
+        </nav>
+      </footer>
+
+    </section>
+
+    <section>
+
+      <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
+
+    </section>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
